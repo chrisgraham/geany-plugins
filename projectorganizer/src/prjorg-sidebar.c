@@ -169,6 +169,7 @@ static gint show_dialog_find_file(gchar *utf8_path, gchar **pattern, gboolean *c
 
 		s_fif_dialog.full_path = gtk_check_button_new_with_mnemonic(_("Search in full path"));
 		gtk_button_set_focus_on_click(GTK_BUTTON(s_fif_dialog.full_path), FALSE);
+		gtk_toggle_button_set_active (s_fif_dialog.full_path, TRUE);
 
 		gtk_box_pack_start(GTK_BOX(vbox), s_fif_dialog.case_sensitive, TRUE, FALSE, 0);
 		gtk_box_pack_start(GTK_BOX(vbox), s_fif_dialog.full_path, TRUE, FALSE, 0);
